@@ -57,7 +57,7 @@ ENV MKL_NUM_THREADS=1
 #
 FROM pytorch
 
-ARG sha=171fee4
+ARG sha=cf0e269
 
 RUN git clone https://github.com/castorini/castor /castorini/castor && \
     git clone https://github.com/castorini/data /castorini/data && \
