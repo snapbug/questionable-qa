@@ -6,6 +6,7 @@ reps=0
 while [ ${reps} -lt 200 ]
 do
 	seed=$(( RANDOM ))
+
 	if [ ! -f model.cpu.seed.${seed}.log ]
 	then
 		echo ${seed} runs
