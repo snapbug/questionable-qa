@@ -107,9 +107,9 @@ if [[ $1 = "all" || $1 = "gpu" ]]; then
 	do
 		for dataset in "TrecQA" "WikiQA"
 		do
-			${GPU_DOCKER} run ${GPU_RUNTIME} -it --name qqa snapbug/qqa:sha-cf0e269 sh -c "python main.py qqa.${dataset}.model.gpu --paper-ext-feats --cuda ${cudnn} --dataset_folder=../../data/${dataset}"
-			${GPU_DOCKER} logs ${GPU_RUNTIME} qqa > qqa.${dataset}.log.gpu
-			${GPU_DOCKER} cp ${GPU_RUNTIME} qqa:/castorini/castor/sm_cnn/qqa.${dataset}.model.gpu .
+			${GPU_DOCKER} run ${GPU_RUNTIME} -it --name qqa snapbug/qqa:sha-cf0e269 sh -c "python main.py qqa.${dataset}.model.gpu${cudnn} --paper-ext-feats --cuda ${cudnn} --dataset_folder=../../data/${dataset}"
+			${GPU_DOCKER} logs ${GPU_RUNTIME} qqa > qqa.${dataset}.log.gpu${cudnn}
+			${GPU_DOCKER} cp ${GPU_RUNTIME} qqa:/castorini/castor/sm_cnn/qqa.${dataset}.model.gpu${cudnn} .
 			${GPU_DOCKER} rm ${GPU_RUNTIME} qqa
 		done
 	done
