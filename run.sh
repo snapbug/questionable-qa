@@ -96,7 +96,7 @@ if [[ $1 = "all" || $1 = "gpu" || $1 = "seeds-gpu" || $1 = "seeds" ]]; then
 		GPU_RUNTIME=--runtime=nvidia
 	fi
 
-	if [[ "$GPU_DOCKER" -eq "" && "$GPU_RUNTIME" -eq "" ]]; then
+	if [[ -z "$GPU_DOCKER" && -z "$GPU_RUNTIME" ]]; then
 		echo No suitable GPU runtime found, skipping GPU experiments
 		exit
 	fi
