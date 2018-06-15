@@ -49,18 +49,18 @@ of commonality. If you only, for example, want to replicate the math library
 experiments, then manually pull the required images. Look at `run.sh` for which
 images are required for which experiments.
 
-| Image         | Figure/Table     | Notes                                          |
-|---------------|------------------|------------------------------------------------|
-| `sha-*`       | Table 4          | See note above regarding `sha-cf0e269`         |
-| `pytorch-*`   | Table 5          |                                                |
-| `*mkl`        | Table 6          |                                                |
-| `sha-cf0e269` | Table 7          |                                                |
-| `sha-cf0e269` | Table 8          |                                                |
-| `sha-cf0e269` | Figure 2 (left)  | Just the CPU seeds                             |
-| `sha-cf0e269` | Figure 2 (right) | Just the GPU seeds                             |
-| `sha-cf0e269` | Figure 2         | Both CPU and GPU seeds                         |
-|               | Figure 3         | Use the output from the logs of `run.sh seeds` |
-|               | Table 9          | Use the output from the logs of `run.sh seeds` |
+| Image                                      | Figure/Table     | Notes                                          |
+|--------------------------------------------|------------------|------------------------------------------------|
+| `sha-*`                                    | Table 4          | See note above regarding `sha-cf0e269`         |
+| `pytorch-*`                                | Table 5          |                                                |
+| `*mkl`                                     | Table 6          |                                                |
+| `sha-cf0e269` or `mkl` or `pytorch-0.1.12` | Table 7          |                                                |
+| `sha-cf0e269` or `mkl` or `pytorch-0.1.12` | Table 8          |                                                |
+| `sha-cf0e269` or `mkl` or `pytorch-0.1.12` | Figure 2 (left)  | Just the CPU seeds                             |
+| `sha-cf0e269` or `mkl` or `pytorch-0.1.12` | Figure 2 (right) | Just the GPU seeds                             |
+| `sha-cf0e269` or `mkl` or `pytorch-0.1.12` | Figure 2         | Both CPU and GPU seeds                         |
+|                                            | Figure 3         | Use the output from the logs of `run.sh seeds` |
+|                                            | Table 9          | Use the output from the logs of `run.sh seeds` |
 
 ## Replication
 
